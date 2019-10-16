@@ -1,0 +1,84 @@
+---
+title: "COMP5048: Week 8"
+author: "khalido"
+date: "26/09/2019"
+output:
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The libraries I'm using:
+
+```{r loading libraries}
+library(tidyverse)
+library(networkD3)
+```
+
+## Force Network Graph
+
+```{r cars}
+data("MisLinks")
+data("MisNodes")
+
+forceNetwork(Links=MisLinks, Nodes=MisNodes, Source="source", 
+             Target="target", Value = "value", NodeID = "name",
+             Nodesize="size", Group = "group", opacity = 0.8, zoom = TRUE, legend = TRUE)
+```
+
+## Sankey
+
+You can also embed plots, for example:
+
+```{r sankey}
+Energy <- jsonlite::fromJSON("energy.json")
+names(Energy)
+```
+
+```{r}
+sankeyNetwork(Links = Energy$links, Nodes = Energy$nodes, 
+              Source = "source", Target = "target", Value = "value", 
+              NodeID = "name", units = "TWh", fontSize = 12, 
+              nodeWidth = 40, width=1000, height=710)
+```
+
+## Chord diagram
+
+```{r}
+hairColourData <- matrix(c(11975, 1951, 8010, 1013, 5871, 10048, 16145, 990,
+8916, 2060, 8090, 940,
+2868, 6171, 8045, 6907), nrow = 4)
+hairColourData
+```
+
+```{r}
+chordNetwork(Data = hairColourData,
+width = 500,
+height = 500,
+colourScale = c("#000000", "#FFDD89", "#957244", "#F26223"), labels = c("gray", "blond", "brown", "red"))
+```
+
+
+## karate club igraph
+
+```{r}
+library(igraph)
+
+# loading sample data
+karate <- make_graph("Zachary")
+
+# make clusters and get cluster membership
+clust <- cluster_infomap(karate)
+members <- membership(clust)
+
+# convert to networkD3 format
+karate_d3 <- igraph_to_networkD3(karate, group = members)
+
+forceNetwork(Links = karate_d3$links, Nodes = karate_d3$nodes, 
+             Source = 'source', Target = 'target', NodeID = 'name', Group = 'group')
+```
+
+

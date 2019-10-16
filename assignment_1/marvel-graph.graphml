@@ -1,0 +1,367 @@
+<?xml version="1.0" ?>
+<graphml>
+    <key attr.name="type" attr.type="string" for="node" id="type"/>
+    <key attr.name="name" attr.type="string" for="node" id="name"/>
+    <graph edgedefault="directed" id="">
+        <node id="h0">
+            <data key="type">hero</data>
+            <data key="name">Ant-Man</data>
+        </node>
+        <node id="h1">
+            <data key="type">hero</data>
+            <data key="name">Black Panther</data>
+        </node>
+        <node id="h2">
+            <data key="type">hero</data>
+            <data key="name">Black Widow</data>
+        </node>
+        <node id="h3">
+            <data key="type">hero</data>
+            <data key="name">Captain America</data>
+        </node>
+        <node id="h4">
+            <data key="type">hero</data>
+            <data key="name">Captain Marvel</data>
+        </node>
+        <node id="h5">
+            <data key="type">hero</data>
+            <data key="name">Doctor Strange</data>
+        </node>
+        <node id="h6">
+            <data key="type">hero</data>
+            <data key="name">Drax the Destroyer</data>
+        </node>
+        <node id="h7">
+            <data key="type">hero</data>
+            <data key="name">Falcon</data>
+        </node>
+        <node id="h8">
+            <data key="type">hero</data>
+            <data key="name">Gamora</data>
+        </node>
+        <node id="h9">
+            <data key="type">hero</data>
+            <data key="name">Groot</data>
+        </node>
+        <node id="h10">
+            <data key="type">hero</data>
+            <data key="name">Hawkeye</data>
+        </node>
+        <node id="h11">
+            <data key="type">hero</data>
+            <data key="name">Hulk</data>
+        </node>
+        <node id="h12">
+            <data key="type">hero</data>
+            <data key="name">Iron Man</data>
+        </node>
+        <node id="h13">
+            <data key="type">hero</data>
+            <data key="name">Loki</data>
+        </node>
+        <node id="h14">
+            <data key="type">hero</data>
+            <data key="name">Mantis</data>
+        </node>
+        <node id="h15">
+            <data key="type">hero</data>
+            <data key="name">Nebula</data>
+        </node>
+        <node id="h16">
+            <data key="type">hero</data>
+            <data key="name">Nick Fury</data>
+        </node>
+        <node id="h17">
+            <data key="type">hero</data>
+            <data key="name">Odin</data>
+        </node>
+        <node id="h18">
+            <data key="type">hero</data>
+            <data key="name">Quicksilver</data>
+        </node>
+        <node id="h19">
+            <data key="type">hero</data>
+            <data key="name">Rocket Raccoon</data>
+        </node>
+        <node id="h20">
+            <data key="type">hero</data>
+            <data key="name">Scarlet Witch</data>
+        </node>
+        <node id="h21">
+            <data key="type">hero</data>
+            <data key="name">Spider-Man</data>
+        </node>
+        <node id="h22">
+            <data key="type">hero</data>
+            <data key="name">Star-Lord</data>
+        </node>
+        <node id="h23">
+            <data key="type">hero</data>
+            <data key="name">Thor</data>
+        </node>
+        <node id="h24">
+            <data key="type">hero</data>
+            <data key="name">Vision</data>
+        </node>
+        <node id="h25">
+            <data key="type">hero</data>
+            <data key="name">War Machine</data>
+        </node>
+        <node id="h26">
+            <data key="type">hero</data>
+            <data key="name">Wasp</data>
+        </node>
+        <node id="h27">
+            <data key="type">hero</data>
+            <data key="name">Winter Soldier</data>
+        </node>
+        <node id="m0">
+            <data key="type">movie</data>
+            <data key="name">Ant-Man</data>
+        </node>
+        <node id="m1">
+            <data key="type">movie</data>
+            <data key="name">Ant-Man and the Wasp</data>
+        </node>
+        <node id="m2">
+            <data key="type">movie</data>
+            <data key="name">Avengers: Endgame</data>
+        </node>
+        <node id="m3">
+            <data key="type">movie</data>
+            <data key="name">Avengers: Age of Ultron</data>
+        </node>
+        <node id="m4">
+            <data key="type">movie</data>
+            <data key="name">Avengers: Infinity War</data>
+        </node>
+        <node id="m5">
+            <data key="type">movie</data>
+            <data key="name">Black Panther</data>
+        </node>
+        <node id="m6">
+            <data key="type">movie</data>
+            <data key="name">Captain America: Civil War</data>
+        </node>
+        <node id="m7">
+            <data key="type">movie</data>
+            <data key="name">Captain America: The First Avenger</data>
+        </node>
+        <node id="m8">
+            <data key="type">movie</data>
+            <data key="name">Captain America: The Winter Soldier</data>
+        </node>
+        <node id="m9">
+            <data key="type">movie</data>
+            <data key="name">Captain Marvel</data>
+        </node>
+        <node id="m10">
+            <data key="type">movie</data>
+            <data key="name">Doctor Strange</data>
+        </node>
+        <node id="m11">
+            <data key="type">movie</data>
+            <data key="name">Guardians of the Galaxy</data>
+        </node>
+        <node id="m12">
+            <data key="type">movie</data>
+            <data key="name">Guardians of the Galaxy Vol. 2</data>
+        </node>
+        <node id="m13">
+            <data key="type">movie</data>
+            <data key="name">Guardians of the Galaxy Vol. 3</data>
+        </node>
+        <node id="m14">
+            <data key="type">movie</data>
+            <data key="name">Iron Man</data>
+        </node>
+        <node id="m15">
+            <data key="type">movie</data>
+            <data key="name">Iron Man 2</data>
+        </node>
+        <node id="m16">
+            <data key="type">movie</data>
+            <data key="name">Iron Man 3</data>
+        </node>
+        <node id="m17">
+            <data key="type">movie</data>
+            <data key="name">Spider-Man: Far From Home</data>
+        </node>
+        <node id="m18">
+            <data key="type">movie</data>
+            <data key="name">Spider-Man: Homecoming</data>
+        </node>
+        <node id="m19">
+            <data key="type">movie</data>
+            <data key="name">The Avengers</data>
+        </node>
+        <node id="m20">
+            <data key="type">movie</data>
+            <data key="name">The Incredible Hulk</data>
+        </node>
+        <node id="m21">
+            <data key="type">movie</data>
+            <data key="name">Thor</data>
+        </node>
+        <node id="m22">
+            <data key="type">movie</data>
+            <data key="name">Thor: Ragnarok</data>
+        </node>
+        <node id="m23">
+            <data key="type">movie</data>
+            <data key="name">Thor: The Dark World</data>
+        </node>
+        <edge source="h0" target="m0"/>
+        <edge source="h0" target="m6"/>
+        <edge source="h0" target="m18"/>
+        <edge source="h0" target="m1"/>
+        <edge source="h0" target="m2"/>
+        <edge source="h1" target="m6"/>
+        <edge source="h1" target="m5"/>
+        <edge source="h1" target="m4"/>
+        <edge source="h1" target="m2"/>
+        <edge source="h2" target="m15"/>
+        <edge source="h2" target="m19"/>
+        <edge source="h2" target="m8"/>
+        <edge source="h2" target="m3"/>
+        <edge source="h2" target="m6"/>
+        <edge source="h2" target="m4"/>
+        <edge source="h2" target="m2"/>
+        <edge source="h3" target="m7"/>
+        <edge source="h3" target="m19"/>
+        <edge source="h3" target="m8"/>
+        <edge source="h3" target="m3"/>
+        <edge source="h3" target="m0"/>
+        <edge source="h3" target="m6"/>
+        <edge source="h3" target="m18"/>
+        <edge source="h3" target="m4"/>
+        <edge source="h3" target="m2"/>
+        <edge source="h4" target="m9"/>
+        <edge source="h4" target="m2"/>
+        <edge source="h5" target="m10"/>
+        <edge source="h5" target="m22"/>
+        <edge source="h5" target="m4"/>
+        <edge source="h5" target="m2"/>
+        <edge source="h6" target="m11"/>
+        <edge source="h6" target="m12"/>
+        <edge source="h6" target="m4"/>
+        <edge source="h6" target="m2"/>
+        <edge source="h6" target="m13"/>
+        <edge source="h7" target="m8"/>
+        <edge source="h7" target="m3"/>
+        <edge source="h7" target="m0"/>
+        <edge source="h7" target="m6"/>
+        <edge source="h7" target="m4"/>
+        <edge source="h7" target="m2"/>
+        <edge source="h8" target="m11"/>
+        <edge source="h8" target="m12"/>
+        <edge source="h8" target="m4"/>
+        <edge source="h8" target="m2"/>
+        <edge source="h9" target="m11"/>
+        <edge source="h9" target="m12"/>
+        <edge source="h9" target="m4"/>
+        <edge source="h9" target="m2"/>
+        <edge source="h9" target="m13"/>
+        <edge source="h10" target="m21"/>
+        <edge source="h10" target="m19"/>
+        <edge source="h10" target="m3"/>
+        <edge source="h10" target="m6"/>
+        <edge source="h10" target="m2"/>
+        <edge source="h11" target="m20"/>
+        <edge source="h11" target="m19"/>
+        <edge source="h11" target="m16"/>
+        <edge source="h11" target="m3"/>
+        <edge source="h11" target="m22"/>
+        <edge source="h11" target="m4"/>
+        <edge source="h11" target="m2"/>
+        <edge source="h12" target="m14"/>
+        <edge source="h12" target="m20"/>
+        <edge source="h12" target="m15"/>
+        <edge source="h12" target="m19"/>
+        <edge source="h12" target="m16"/>
+        <edge source="h12" target="m3"/>
+        <edge source="h12" target="m6"/>
+        <edge source="h12" target="m18"/>
+        <edge source="h12" target="m4"/>
+        <edge source="h12" target="m2"/>
+        <edge source="h13" target="m21"/>
+        <edge source="h13" target="m19"/>
+        <edge source="h13" target="m23"/>
+        <edge source="h13" target="m22"/>
+        <edge source="h13" target="m4"/>
+        <edge source="h13" target="m2"/>
+        <edge source="h14" target="m12"/>
+        <edge source="h14" target="m4"/>
+        <edge source="h14" target="m2"/>
+        <edge source="h14" target="m13"/>
+        <edge source="h15" target="m11"/>
+        <edge source="h15" target="m12"/>
+        <edge source="h15" target="m4"/>
+        <edge source="h15" target="m2"/>
+        <edge source="h16" target="m14"/>
+        <edge source="h16" target="m15"/>
+        <edge source="h16" target="m21"/>
+        <edge source="h16" target="m7"/>
+        <edge source="h16" target="m19"/>
+        <edge source="h16" target="m8"/>
+        <edge source="h16" target="m3"/>
+        <edge source="h16" target="m4"/>
+        <edge source="h16" target="m9"/>
+        <edge source="h16" target="m17"/>
+        <edge source="h17" target="m21"/>
+        <edge source="h17" target="m23"/>
+        <edge source="h17" target="m22"/>
+        <edge source="h18" target="m8"/>
+        <edge source="h18" target="m3"/>
+        <edge source="h19" target="m11"/>
+        <edge source="h19" target="m12"/>
+        <edge source="h19" target="m4"/>
+        <edge source="h19" target="m2"/>
+        <edge source="h19" target="m13"/>
+        <edge source="h20" target="m8"/>
+        <edge source="h20" target="m3"/>
+        <edge source="h20" target="m6"/>
+        <edge source="h20" target="m4"/>
+        <edge source="h20" target="m2"/>
+        <edge source="h21" target="m15"/>
+        <edge source="h21" target="m6"/>
+        <edge source="h21" target="m18"/>
+        <edge source="h21" target="m4"/>
+        <edge source="h21" target="m2"/>
+        <edge source="h21" target="m17"/>
+        <edge source="h22" target="m11"/>
+        <edge source="h22" target="m12"/>
+        <edge source="h22" target="m4"/>
+        <edge source="h22" target="m2"/>
+        <edge source="h22" target="m13"/>
+        <edge source="h23" target="m21"/>
+        <edge source="h23" target="m19"/>
+        <edge source="h23" target="m23"/>
+        <edge source="h23" target="m3"/>
+        <edge source="h23" target="m10"/>
+        <edge source="h23" target="m22"/>
+        <edge source="h23" target="m4"/>
+        <edge source="h23" target="m2"/>
+        <edge source="h24" target="m3"/>
+        <edge source="h24" target="m6"/>
+        <edge source="h24" target="m4"/>
+        <edge source="h24" target="m2"/>
+        <edge source="h25" target="m14"/>
+        <edge source="h25" target="m15"/>
+        <edge source="h25" target="m16"/>
+        <edge source="h25" target="m3"/>
+        <edge source="h25" target="m6"/>
+        <edge source="h25" target="m4"/>
+        <edge source="h25" target="m2"/>
+        <edge source="h26" target="m0"/>
+        <edge source="h26" target="m1"/>
+        <edge source="h26" target="m2"/>
+        <edge source="h27" target="m7"/>
+        <edge source="h27" target="m8"/>
+        <edge source="h27" target="m0"/>
+        <edge source="h27" target="m6"/>
+        <edge source="h27" target="m5"/>
+        <edge source="h27" target="m4"/>
+        <edge source="h27" target="m2"/>
+    </graph>
+</graphml>

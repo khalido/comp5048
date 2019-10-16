@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style> /* set the CSS */
+    
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+</style>
+
+<body>
+
+<!-- load the d3.js library -->    	
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script>
+
+// set the dimensions and margins of the diagram
+var margin = {top: 10, right: 150, bottom: 30, left: 90},
+    width = 500 + margin.left + margin.right,
+    height = 800 + margin.top + margin.bottom;
+
+var link, node;
+
+// declares a tree layout and assigns the size
+var treemap = d3.cluster()
+    .size([height, width]);
+
+// loads tree data
+d3.json("flare-util.json")
+    .then(function(treeData){
+    //  assigns the data to a hierarchy using parent-child relationships
+    var nodes = d3.hierarchy(treeData, function(d) {
+        return d.children;
+    });
+
+    // maps the node data to the tree layout
+    nodes = treemap(nodes);
+
+    // append the svg object to the body of the page
+    // appends a 'group' element to 'svg'
+    // moves the 'group' element to the top left margin
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom),
+        g = svg.append("g")
+        .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+    // adds the links between the nodes
+    link = g.selectAll(".link")
+        .data(nodes.descendants().slice(1))
+    .enter().append("line")
+        .attr("class", "link")
+        .attr("x1", function(d) {return d.parent.y})
+        .attr("y1", function(d) {return d.parent.x})
+        .attr("x2", function(d) {return d.y})
+        .attr("y2", function(d) {return d.x});
+
+
+    // adds each node as a group
+    node = g.selectAll(".node")
+        .data(nodes.descendants())
+    .enter().append("g")
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+      
+    // adds the circle to the node
+    node.append("circle")
+    .attr("r", 4);
+
+    // adds the text to the node
+    node.append("text")
+      .attr("dy", "0.31em")
+      .attr("x", function(d) { return d.children ? -8 : 8; })
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(d => d.data.name);
+
+});
+    
+</script>
+</body>

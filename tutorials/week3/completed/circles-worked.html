@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<body>
+<script>
+var centres = [{"x": 10, "y":20},{"x": 150, "y": 100}];
+var width = 200, height = 200, r = 5;
+
+var svg = d3.select("body").append("svg");
+
+var circles = svg.selectAll("circle")
+    .data(centres)
+  .enter().append("circle")
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .attr("r", 5)
+    .style("fill", "red");
+</script>
+</body>
